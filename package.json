@@ -5,5 +5,9 @@
     "prebuild": "shx mkdir -p dist && shx mkdir -p cores && shx mkdir -p roms",
     "build": "vite build && shx cp -R cores dist/ && shx cp -R roms dist/ || true",
     "deploy": "npm install && npm run build"
+  },
+  "devDependencies": {
+    "vite": "^4.5.9",
+    "shx": "^0.3.4"
   }
 }
