@@ -1,6 +1,5 @@
 {
     "build": {
-
       "directory": "dist",
       "node": {
         "version": "18"
