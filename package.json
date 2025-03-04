@@ -1,5 +1,9 @@
 {
+  "main": "index.html",
   "scripts": {
     "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^4.5.9"
   }
 }

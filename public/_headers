@@ -1,0 +1,6 @@
+/*
+  Content-Type: application/wasm
+  Access-Control-Allow-Origin: *
+/wasm
+  Content-Type: application/wasm
+  Cache-Control: public, max-age=31536000, immutable
