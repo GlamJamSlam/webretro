@@ -1,0 +1,18 @@
+{
+  "build": {
+    "command": "npm run build",
+    "output": "dist"
+  },
+  "routes": [
+    {
+      "src": "/cores/.*",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
