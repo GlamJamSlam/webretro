@@ -1,10 +1,13 @@
 {
   "main": "index.html",
-  "scripts": {
-    "dev": "vite dev",
-    "build": "vite build"
-  },
-  "devDependencies": {
-    "vite": "^4.5.9"
+    "scripts": {
+      "dev": "vite dev",
+      "prebuild": "shx mkdir -p dist",
+      "build": "vite build && shx cp -R cores dist/ && shx cp -R roms dist/",
+      "deploy": "npm install && npm run build"
+    },
+    "devDependencies": {
+      "vite": "^4.5.9",
+      "shx": "^0.3.4"
+    }
   }
-}
